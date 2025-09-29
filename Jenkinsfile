@@ -16,8 +16,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: "main"
-                url: 'https://github.com/bharathsavadatti447/git_assignment_29092025.git'
+                git branch: "main", url: 'https://github.com/bharathsavadatti447/git_assignment_29092025.git'
             }
         }
 
