@@ -38,6 +38,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploy the Artifact..."
+                sh 'scp -i /home/ubuntu/Jenkins.pem /home/ubuntu/workspace/Project_9/target/hello-1.0.war ubuntu@50.17.16.199:/home/ubuntu/apache-tomcat-9.0.109/webapps'
 
             }
         }
